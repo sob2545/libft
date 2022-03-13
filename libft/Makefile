@@ -6,7 +6,7 @@
 #    By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/09 11:16:18 by sesim             #+#    #+#              #
-#    Updated: 2022/03/09 11:56:52 by sesim            ###   ########.fr        #
+#    Updated: 2022/03/13 22:48:01 by seongmins        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,7 @@ $(NAME) : $(OBJS)
 	$(AR) $@ $^
 
 .c.o : $(SRCS)
-	$(CC) $(CFLAGS) -c -I $(INCLUDE) -o $@ $^
+	@$(CC) $(CFLAGS) -c -I $(INCLUDE) -o $@ $^
 
 clean :
 	$(RM) $(OBJS)

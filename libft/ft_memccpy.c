@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 14:29:29 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/13 22:27:04 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/13 23:21:21 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,4 @@
 
 void	*ft_memccpy(void *dst, const void *src, int	c, size_t n)
 {
-	if (dst && src)
-		
 }
