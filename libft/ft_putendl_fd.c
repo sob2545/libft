@@ -6,17 +6,14 @@
 /*   By: sesim <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:46:30 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/10 16:57:36 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/13 18:29:07 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int	s_len;
-
-	s_len = ft_strlen(s) + 1;
-	write(fd, &s, s_len);
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }
