@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: sesim <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/10 14:29:32 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/14 16:22:03 by sesim            ###   ########.fr       */
+/*   Created: 2022/03/14 16:51:04 by sesim             #+#    #+#             */
+/*   Updated: 2022/03/14 17:00:47 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char	*ptr;
+	unsigned char	*s1_ptr;
+	unsigned char	*s2_ptr;
 
-	ptr = (unsigned char *)s;
-	if (!s)
-		return (0);
+	s1_ptr = (unsigned char *)s1;
+	s2_ptr = (unsigned char *)s2;
 	while (n--)
 	{
-		if (*ptr == (unsigned char) c)
-			return (ptr);
-		ptr++;
+		if (*s1_ptr == *s2_ptr)
+			return (*s1_ptr - *s2_ptr);
+		s1_ptr++;
+		s2_ptr++;
 	}
 	return (0);
 }
