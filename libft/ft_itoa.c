@@ -3,27 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sesim <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:46:09 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/16 14:26:15 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/17 16:33:05 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-size_t	num_size(int n)
+static size_t	num_size(int n)
 {
 	size_t	len;
 
-	len = 0;
-	if (n < 0)
+	len = 1;
+	if (n == -2147483648)
+		len = 11;
+	if (n < 0 && n > -2147483648)
 	{
 		n *= -1;
 		len++;
 	}
-	while (n > 0)
+	while (n > 9)
 	{
 		n /= 10;
 		len++;
@@ -31,20 +33,37 @@ size_t	num_size(int n)
 	return (len);
 }
 
+void	val_init(size_t *div, size_t *i, size_t *len, int *n)
+{
+	*len = num_size(*n);
+	*div = 1;
+	*i = 0;
+}
+
 char	*ft_itoa(int n)
 {
 	char	*res;
+	size_t	div;
 	size_t	i;
+	size_t	len;
 
-	i = 0;
-	res = (char *)malloc(sizeof(char) * (num_size(n) + 1));
+	val_init(&div, &i, &len, &n);
+	res = (char *)malloc(sizeof(char) * (len + 1));
 	if (res == NULL)
 		return (NULL);
+	if (n == -2147483648)
+		return ("-2147483648\0");
 	if (n < 0)
 	{
 		n *= -1;
 		res[0] = '-';
 		i++;
 	}
-	
+	res[len + 1] = '\0';
+	while (len-- > i)
+	{
+		res[len] = ((n / div) % 10) + 48;
+		div *= 10;
+	}
+	return (res);
 }
