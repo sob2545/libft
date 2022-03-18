@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 13:56:46 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/13 13:01:02 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/18 17:39:00 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	src_len = ft_strlen(src);
+	if (dstsize == 0)
+		return (src_len);
 	while (src[i] && i + 1 < dstsize)
 	{
 		dst[i] = src[i];

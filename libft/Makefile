@@ -6,7 +6,7 @@
 #    By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/09 11:16:18 by sesim             #+#    #+#              #
-#    Updated: 2022/03/16 18:18:22 by seongmins        ###   ########.fr        #
+#    Updated: 2022/03/18 14:47:06 by sesim            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRCS = ft_memset.c \
 	   ft_memccpy.c \
 	   ft_memmove.c \
 	   ft_memchr.c \
+	   ft_memcmp.c \
 	   ft_strlen.c \
 	   ft_strlcpy.c \
 	   ft_strlcat.c \

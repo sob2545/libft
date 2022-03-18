@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:48:44 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/16 18:15:35 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/18 16:41:21 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 
 	i = 0;
-	res = (char *)malloc(sizeof(char) * (ft_strlen(s1) * ft_strlen(s2) + 1));
+	res = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (res == NULL)
 		return (NULL);
 	while (s1[i])
