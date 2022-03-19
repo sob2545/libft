@@ -6,7 +6,7 @@
 #    By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/09 11:16:18 by sesim             #+#    #+#              #
-#    Updated: 2022/03/18 14:47:06 by sesim            ###   ########.fr        #
+#    Updated: 2022/03/19 12:02:43 by sesim            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,13 +21,18 @@ SRCS = ft_memset.c \
 	   ft_memmove.c \
 	   ft_memchr.c \
 	   ft_memcmp.c \
+	   ft_strcmp.c \
+	   ft_strdup.c \
+	   ft_strjoin.c \
 	   ft_strlen.c \
 	   ft_strlcpy.c \
 	   ft_strlcat.c \
 	   ft_strchr.c \
 	   ft_strrchr.c \
+	   ft_strmapi.c \
+	   ft_strncmp.c \
 	   ft_strnstr.c \
-	   ft_strcmp.c \
+	   ft_strtrim.c \
 	   ft_atoi.c \
 	   ft_isalpha.c \
 	   ft_isdigit.c \
@@ -37,13 +42,9 @@ SRCS = ft_memset.c \
 	   ft_toupper.c \
 	   ft_tolower.c \
 	   ft_calloc.c \
-	   ft_strdup.c \
 	   ft_substr.c \
-	   ft_strjoin.c \
-	   ft_strtrim.c \
 	   ft_split.c \
 	   ft_itoa.c \
-	   ft_strmapi.c \
 	   ft_putchar_fd.c \
 	   ft_putstr_fd.c \
 	   ft_putendl_fd.c \

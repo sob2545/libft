@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:46:38 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/16 18:14:27 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/19 12:10:57 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ void static	ft_print(int num, int fd)
 
 void	ft_putnbr_fd(int n, int fd)
 {
+	if (fd < 0)
+		return ;
 	if (n == (-2147483648))
 	{
 		write (fd, "-2", 2);

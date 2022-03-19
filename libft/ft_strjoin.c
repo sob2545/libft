@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:48:44 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/18 16:41:21 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/19 12:51:54 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,16 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
+	size_t	cpy_val;
+	size_t	cat_val;
 	char	*res;
-	size_t	i;
 
-	i = 0;
 	res = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
-	if (res == NULL)
-		return (NULL);
-	while (s1[i])
-	{
-		res[i] = s1[i];
-		i++;
-	}
-	while (s2[i])
-	{
-		res[i] = s2[i];
-		i++;
-	}
-	res[i] = '\0';
+	if (res == 0)
+		return (0);
+	cpy_val = ft_strlcpy(res, s1, ft_strlen(s1) + 1);
+	cat_val = ft_strlcat(res, s2, ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (cpy_val != ft_strlen(s1) || cat_val != (ft_strlen(s1) + ft_strlen(s2)))
+		return (0);
 	return (res);
 }

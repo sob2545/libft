@@ -6,8 +6,12 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:49:48 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/16 18:16:37 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/19 14:57:20 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+}
