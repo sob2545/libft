@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 14:29:38 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/18 18:13:16 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/20 14:11:06 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 {
 	char	*tmp;
 
-	if (dst == NULL && src == NULL)
-		return (NULL);
+	if (dst == 0 && src == 0)
+		return (0);
 	tmp = (char *)dst;
 	if (dst < src)
 	{

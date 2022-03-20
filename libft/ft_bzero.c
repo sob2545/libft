@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 14:28:58 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/19 14:41:13 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/20 14:55:02 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,10 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	if (n == 0)
-		return ;
-	else
+	while (n--)
 	{
-		while (n--)
-		{
-			*(unsigned char *)s = 0;
-			s++;
-		}
+		*(unsigned char *)s = 0;
+		s++;
 	}
+	return ;
 }

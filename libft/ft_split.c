@@ -6,12 +6,11 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:47:16 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/18 14:02:20 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/20 18:14:56 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static size_t	word_cnt(char const *s, char c)
 {
@@ -45,7 +44,7 @@ static char	**word_free(char **tab)
 		i++;
 	}
 	free(tab);
-	return (NULL);
+	return (0);
 }
 
 static char	**word_split(char **tab, char const *s, char c, size_t len)
@@ -79,9 +78,9 @@ char	**ft_split(char const *s, char c)
 	size_t	s_len;
 
 	s_len = word_cnt(s, c);
-	res = (char **)malloc(sizeof(char) * (s_len + 1));
-	if (res == NULL)
-		return (NULL);
+	res = (char **)malloc(sizeof(char *) * (s_len + 1));
+	if (res == 0)
+		return (0);
 	word_split(res, s, c, s_len);
 	return (res);
 }

@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/19 11:29:19 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/19 14:56:33 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/20 14:00:01 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	unsigned int	i;
 
 	i = 0;
-	if (s == 0)
+	if (s == 0 || f == 0)
 		return ;
 	while (s[i])
 	{

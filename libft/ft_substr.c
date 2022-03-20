@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:50:02 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/18 18:59:22 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/20 18:32:23 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,14 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*res;
-	size_t	i;
+	int		mal_len;
 
-	i = 0;
-	if (start > len)
-		return (0);
-	res = (char *)malloc(sizeof(char) * len + 1);
+	mal_len = ft_strlen(s + start);
+	if (len > mal_len || len == 0)
+		return (ft_strdup(""));
+	res = (char *)malloc(sizeof(char) * mal_len + 1);
 	if (res == 0)
 		return (0);
-	while (i < len && s[i])
-	{
-		res[i] = s[i];
-		i++;
-	}
-	res[i] = 0;
+	ft_strdup(s + start);
 	return (res);
 }
