@@ -6,12 +6,11 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:46:09 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/20 17:59:59 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/21 14:39:27 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static int	nb_size(int n)
 {

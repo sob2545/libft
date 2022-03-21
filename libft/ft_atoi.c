@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 13:18:55 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/20 16:59:24 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/21 15:13:50 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,10 @@ int	ft_atoi(const char *str)
 			pn *= -1;
 		i++;
 	}
-	while (ft_isdigit(str[i]))
+	while (ft_isdigit(str[i]) && *str)
 	{
 		res *= 10;
-		res += str[i] + 48;
+		res += str[i] - 48;
 		i++;
 	}
 	if (check_val(res, pn) != 1)

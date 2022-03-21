@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/10 16:50:02 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/21 15:37:15 by sesim            ###   ########.fr       */
+/*   Created: 2022/03/21 17:17:43 by sesim             #+#    #+#             */
+/*   Updated: 2022/03/21 17:19:31 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_bonus.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+int	ft_lstsize(t_list *lst)
 {
-	char	*res;
-	size_t	mal_len;
+	int		cnt;
+	t_list	*next;
 
-	if (s == 0)
-		return (0);
-	mal_len = ft_strlen(s + start);
-	if (start >= ft_strlen(s) || len == 0)
-		return (ft_strdup(""));
-	if (len > mal_len)
-		len = mal_len;
-	res = (char *)malloc(sizeof(char) * (len + 1));
-	if (res == 0)
-		return (0);
-	ft_strlcpy(res, s + start, len + 1);
-	return (res);
+	cnt = 0;
+	while (lst)
+	{
+		next = lst->next;
+		cnt++;
+	}
+	return (cnt);
 }
