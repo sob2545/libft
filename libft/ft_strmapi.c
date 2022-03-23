@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:49:21 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/20 14:01:13 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/22 15:30:14 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (0);
 	while (s[i])
 	{
-		res[i] = (f)(i, s[i]);
+		res[i] = f(i, s[i]);
 		i++;
 	}
 	res[i] = '\0';

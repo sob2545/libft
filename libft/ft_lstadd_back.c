@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: seongminsim <sesim@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/21 17:00:40 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/21 17:08:02 by sesim            ###   ########.fr       */
+/*   Created: 2022/03/22 17:07:51 by seongmins         #+#    #+#             */
+/*   Updated: 2022/03/22 17:15:44 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	struct s_list	*new;
+	t_lsit	last;
 
-	new = malloc(sizeof(struct s_list));
-	
+	if (*lst == 0 || new == 0)
+		return ;
+	while (*lst)
+	{
+	}
 }

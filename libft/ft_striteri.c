@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/19 11:29:19 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/20 14:00:01 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/22 15:29:39 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		return ;
 	while (s[i])
 	{
-		(f)(i, &s[i]);
+		f(i, &s[i]);
 		i++;
 	}
 }

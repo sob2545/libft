@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 13:18:55 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/21 15:13:50 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/22 17:42:26 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@ int	check_val(size_t nb, int pn)
 		return (-1);
 	else if (nb > 2147483648 && pn == -1)
 		return (0);
-	return (1);
+	else
+		return (nb * pn);
 }
 
 int	ft_atoi(const char *str)
@@ -44,7 +45,5 @@ int	ft_atoi(const char *str)
 		res += str[i] - 48;
 		i++;
 	}
-	if (check_val(res, pn) != 1)
-		return (check_val(res, pn));
-	return ((int)res * pn);
+	return (check_val(res, pn));
 }

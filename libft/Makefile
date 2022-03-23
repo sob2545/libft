@@ -6,7 +6,7 @@
 #    By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/09 11:16:18 by sesim             #+#    #+#              #
-#    Updated: 2022/03/21 16:48:32 by sesim            ###   ########.fr        #
+#    Updated: 2022/03/22 20:50:29 by seongmins        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,6 +40,7 @@ SRCS = ft_atoi.c \
 	   ft_strmapi.c \
 	   ft_strncmp.c \
 	   ft_strnstr.c \
+	   ft_strtrim.c \
 	   ft_substr.c \
 	   ft_split.c \
 	   ft_toupper.c \
@@ -48,8 +49,19 @@ SRCS = ft_atoi.c \
 	   ft_putstr_fd.c \
 	   ft_putendl_fd.c \
 	   ft_putnbr_fd.c
-	   #ft_strtrim.c \#
+
+SRCS_BONUS = ft_lstnew.c \
+			 ft_lstadd_front.c \
+			 ft_lstsize.c \
+			 ft_lstlast.c \
+			 ft_lstadd_back.c \
+			 ft_lstdelone.c \
+			 ft_lstclear.c \
+			 ft_ lstiter.c \
+			 ft_lstmap.c
+
 OBJS = $(SRCS:.c=.o)
+OBJS_BONUS = $(SRCS_BONUS:.c=.o)
 INCLUDE = libft.h
 NAME = libft.a
 
@@ -62,11 +74,12 @@ $(NAME) : $(OBJS)
 .c.o : $(SRCS)
 	@$(CC) $(CFLAGS) -c -I $(INCLUDE) -o $@ $^
 
-bonus : $(BONUS_OBJS)
-	
+bonus : $(OBJS_BONUS)
+	@$(AR) $@ $^
+	@echo "Bonus Files make completed"
 
 clean :
-	@$(RM) $(OBJS)
+	@$(RM) $(OBJS) $(OBJS_BONUS)
 	@echo "Object files deleted"
 
 fclean : clean
@@ -75,4 +88,4 @@ fclean : clean
 
 re : fclean all
 
-.PHNOY : all clean fclean re
+.PHNOY : all clean fclean re bonus
