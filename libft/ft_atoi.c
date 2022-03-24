@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 13:18:55 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/22 17:42:26 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/24 13:49:28 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,7 @@ int	check_val(size_t nb, int pn)
 		return (-1);
 	else if (nb > 2147483648 && pn == -1)
 		return (0);
-	else
-		return (nb * pn);
+	return (nb * pn);
 }
 
 int	ft_atoi(const char *str)
