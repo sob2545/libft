@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:47:16 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/22 19:34:08 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/24 18:28:04 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,27 +58,38 @@ size_t	word_len(char const *s, char c)
 	return (word_len);
 }
 
+size_t	word_len_cnt(char const **s, char c)
+{
+	size_t	word_len;
+
+	if (ft_strchr(*s, c) == 0)
+		word_len = ft_strlen(*s);
+	else
+		word_len = ft_strchr(*s, c) - *s;
+	return (word_len);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	size_t	i;
-	size_t	len;
 	char	**res;
+	size_t	word_len;
+	size_t	i;
 
-	i = 0;
-	res = (char **)malloc(sizeof(char) * (word_cnt(s, c) + 1));
-	if (res == 0 || s == 0)
+	res = (char **)malloc(sizeof(char *) * (word_cnt(s, c) + 1));
+	if (s == 0 || res == 0)
 		return (word_free(res));
-	while (i < word_cnt(s, c))
+	i = 0;
+	while (*s)
 	{
-		while (*s == c && *s)
+		while (*s == c && s != 0)
 			s++;
 		if (*s != 0)
 		{
-			len = word_len(s, c);
-			res[i] = ft_substr(s, 0, len);
+			word_len = word_len_cnt(&s, c);
+			res[i] = ft_substr(s, 0, word_len);
 			if (res[i] == 0)
 				return (word_free(res));
-			s += len;
+			s += word_len;
 			i++;
 		}
 	}
