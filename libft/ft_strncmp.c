@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 13:45:19 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/19 14:30:48 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/25 00:01:23 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 	p1 = (unsigned char *)s1;
 	p2 = (unsigned char *)s2;
+	if (n == 0)
+		return (0);
 	while (--n && *p1 && *p2 && *p1 == *p2)
 	{
 		p1++;

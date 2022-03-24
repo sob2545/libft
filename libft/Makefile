@@ -6,7 +6,7 @@
 #    By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/09 11:16:18 by sesim             #+#    #+#              #
-#    Updated: 2022/03/22 20:50:29 by seongmins        ###   ########.fr        #
+#    Updated: 2022/03/24 22:34:15 by seongmins        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,7 @@ SRCS_BONUS = ft_lstnew.c \
 			 ft_lstadd_back.c \
 			 ft_lstdelone.c \
 			 ft_lstclear.c \
-			 ft_ lstiter.c \
+			 ft_lstiter.c \
 			 ft_lstmap.c
 
 OBJS = $(SRCS:.c=.o)
