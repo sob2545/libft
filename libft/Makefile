@@ -6,7 +6,7 @@
 #    By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/09 11:16:18 by sesim             #+#    #+#              #
-#    Updated: 2022/03/24 22:34:15 by seongmins        ###   ########.fr        #
+#    Updated: 2022/03/27 16:10:47 by seongmins        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,7 @@ $(NAME) : $(OBJS)
 	@$(CC) $(CFLAGS) -c -I $(INCLUDE) -o $@ $^
 
 bonus : $(OBJS_BONUS)
-	@$(AR) $@ $^
+	@$(AR) $(NAME) $^
 	@echo "Bonus Files make completed"
 
 clean :

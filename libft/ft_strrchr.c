@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 14:29:57 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/19 14:16:01 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/25 20:54:08 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	s_len;
+	unsigned int	s_len;
 
 	s_len = ft_strlen(s) + 1;
 	while (s_len--)

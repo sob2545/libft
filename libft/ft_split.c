@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:47:16 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/24 18:28:04 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/25 14:59:34 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static size_t	word_cnt(char const *s, char c)
 	cnt = 0;
 	while (s[i])
 	{
-		while (s[i] == c && s[i])
+		while (s[i] == c)
 			i++;
 		if (s[i] != c)
 		{

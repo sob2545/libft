@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 13:18:55 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/24 13:49:28 by sesim            ###   ########.fr       */
+/*   Updated: 2022/03/25 20:55:32 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ int	check_val(size_t nb, int pn)
 
 int	ft_atoi(const char *str)
 {
-	int		i;
-	int		pn;
-	size_t	res;
+	unsigned int	i;
+	size_t			res;
+	int				pn;
 
 	i = 0;
 	res = 0;
