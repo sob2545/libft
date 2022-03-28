@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 14:29:29 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/20 15:32:59 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/28 14:15:09 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,10 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	{
 		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 		if (((unsigned char *)src)[i] == (unsigned char)c)
-		{
-			i++;
 			break ;
-		}
 		i++;
 	}
 	if (i == n)
 		return (0);
-	return ((unsigned char *)dst + i);
+	return ((unsigned char *)dst + i + 1);
 }

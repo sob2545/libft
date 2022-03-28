@@ -6,7 +6,7 @@
 /*   By: seongminsim <sesim@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 17:07:51 by seongmins         #+#    #+#             */
-/*   Updated: 2022/03/27 15:31:14 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/03/28 16:06:02 by seongmins        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	}
 	ft_lstlast(*lst)->next = new;
-	new->next = 0;
 }
