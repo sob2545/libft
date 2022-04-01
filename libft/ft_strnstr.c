@@ -6,11 +6,12 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 13:59:00 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/25 16:39:29 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/04/01 14:18:50 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+size_t	ft_strlen(const char *s);
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

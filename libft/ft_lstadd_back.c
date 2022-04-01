@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seongminsim <sesim@student.42seoul.kr      +#+  +:+       +#+        */
+/*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 17:07:51 by seongmins         #+#    #+#             */
-/*   Updated: 2022/03/28 16:06:02 by seongmins        ###   ########.fr       */
+/*   Created: 2022/04/01 14:04:24 by sesim             #+#    #+#             */
+/*   Updated: 2022/04/01 14:04:25 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 

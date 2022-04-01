@@ -6,11 +6,12 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:49:21 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/22 15:30:14 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/04/01 14:18:18 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+size_t	ft_strlen(const char *s);
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

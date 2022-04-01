@@ -6,11 +6,11 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 13:32:06 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/10 14:27:44 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/01 14:17:51 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 size_t	ft_strlen(const char *s)
 {

@@ -6,11 +6,11 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 16:51:04 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/19 14:02:33 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/01 14:08:10 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

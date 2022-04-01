@@ -6,16 +6,15 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:46:51 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/19 12:10:10 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/01 14:11:41 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <unistd.h>
+void	ft_putchar_fd(char c, int fd);
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	if (s == 0 || fd < 0)

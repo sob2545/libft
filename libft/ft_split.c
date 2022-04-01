@@ -6,11 +6,15 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:47:16 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/25 14:59:34 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/04/01 14:14:13 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strdup(const char *s);
+size_t	ft_strlen(const char *s);
 
 static size_t	word_cnt(char const *s, char c)
 {

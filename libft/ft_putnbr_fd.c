@@ -6,11 +6,10 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:46:38 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/19 12:10:57 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/01 14:10:27 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <unistd.h>
 
 void static	ft_print(int num, int fd)

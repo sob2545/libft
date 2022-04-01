@@ -6,11 +6,12 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 13:18:55 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/25 20:55:32 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/04/01 14:00:44 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+int	ft_isdigit(int c);
 
 int	check_val(size_t nb, int pn)
 {

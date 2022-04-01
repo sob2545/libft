@@ -6,11 +6,11 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 14:29:35 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/18 15:03:56 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/01 14:08:21 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

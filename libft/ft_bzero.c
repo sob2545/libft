@@ -6,11 +6,11 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 14:28:58 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/22 17:25:24 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/04/01 14:01:33 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void	ft_bzero(void *s, size_t n)
 {

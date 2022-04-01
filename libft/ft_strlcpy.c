@@ -6,11 +6,12 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 13:56:46 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/18 17:39:00 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/01 14:17:37 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+size_t	ft_strlen(const char *s);
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

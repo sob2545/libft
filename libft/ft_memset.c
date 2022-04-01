@@ -6,11 +6,11 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 14:29:40 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/21 15:04:33 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/01 14:08:40 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {

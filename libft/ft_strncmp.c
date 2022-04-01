@@ -6,11 +6,11 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 13:45:19 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/25 00:01:23 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/04/01 14:18:30 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

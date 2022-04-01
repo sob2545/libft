@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seongminsim <sesim@student.42seoul.kr      +#+  +:+       +#+        */
+/*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/25 20:46:39 by seongmins         #+#    #+#             */
-/*   Updated: 2022/03/25 21:30:01 by seongmins        ###   ########.fr       */
+/*   Created: 2022/04/01 14:15:38 by sesim             #+#    #+#             */
+/*   Updated: 2022/04/01 14:15:40 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+size_t	ft_strlcpy(const char *dst, const char *src, size_t dstsize);
+size_t	ft_strlen(const char *);
 
 char	*ft_strdup(const char *s1)
 {

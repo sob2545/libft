@@ -6,11 +6,14 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:49:48 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/25 21:28:45 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/04/01 14:21:13 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+size_t	ft_strlen(const char *s);
+char	ft_strchr(const char *s, int c);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

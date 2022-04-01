@@ -6,11 +6,14 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:50:02 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/21 15:37:15 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/01 14:22:09 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+size_t	ft_strlcpy(const char *dst, const char *src, size_t dstsize);
+size_t	ft_strlen(const char *s);
+char	*ft_strdup(const char *);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

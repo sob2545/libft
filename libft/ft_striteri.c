@@ -6,11 +6,9 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/19 11:29:19 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/22 15:29:39 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/04/01 14:15:47 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

@@ -6,11 +6,11 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 14:29:38 by sesim             #+#    #+#             */
-/*   Updated: 2022/03/20 14:11:06 by seongmins        ###   ########.fr       */
+/*   Updated: 2022/04/01 14:08:30 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
