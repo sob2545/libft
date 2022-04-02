@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:49:48 by sesim             #+#    #+#             */
-/*   Updated: 2022/04/01 14:21:13 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/02 13:52:27 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		len--;
 	len = len - i + 1;
 	res = ft_substr(s1, (unsigned int)i, len);
+	if (res == 0)
+		return (0);
 	return (res);
 }

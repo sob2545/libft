@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:47:16 by sesim             #+#    #+#             */
-/*   Updated: 2022/04/01 14:14:13 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/02 13:47:00 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static size_t	word_cnt(char const *s, char c)
 	{
 		while (s[i] == c)
 			i++;
-		if (s[i] != c)
+		if (s[i] != 0)
 		{
 			cnt++;
 			while (s[i] != c && s[i])
@@ -39,27 +39,8 @@ static size_t	word_cnt(char const *s, char c)
 
 static char	**word_free(char **tab)
 {
-	size_t	i;
-
-	i = 0;
-	while (tab[i])
-	{
-		free(tab[i]);
-		i++;
-	}
 	free(tab);
 	return (0);
-}
-
-size_t	word_len(char const *s, char c)
-{
-	size_t	word_len;
-
-	if (ft_strchr(s, c) == 0)
-		word_len = ft_strlen(s);
-	else
-		word_len = ft_strchr(s, c) - s;
-	return (word_len);
 }
 
 size_t	word_len_cnt(char const **s, char c)

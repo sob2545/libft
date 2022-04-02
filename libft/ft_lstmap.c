@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 14:06:31 by sesim             #+#    #+#             */
-/*   Updated: 2022/04/01 14:06:32 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/02 13:50:50 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*cur;
 	t_list	*res;
 
-	if (lst == 0 || f == 0 || del == 0)
+	if (lst == 0 || f == 0)
 		return (0);
 	res = 0;
 	while (lst)
