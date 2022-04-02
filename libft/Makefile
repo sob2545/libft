@@ -6,7 +6,7 @@
 #    By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/09 11:16:18 by sesim             #+#    #+#              #
-#    Updated: 2022/03/27 16:10:47 by seongmins        ###   ########.fr        #
+#    Updated: 2022/04/02 21:55:23 by sesim            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,6 @@ SRCS = ft_atoi.c \
 	   ft_isprint.c \
 	   ft_itoa.c \
 	   ft_memcpy.c \
-	   ft_memccpy.c \
 	   ft_memchr.c \
 	   ft_memcmp.c \
 	   ft_memmove.c \
@@ -62,29 +61,29 @@ SRCS_BONUS = ft_lstnew.c \
 
 OBJS = $(SRCS:.c=.o)
 OBJS_BONUS = $(SRCS_BONUS:.c=.o)
+
+ifdef WITH_BONUS
+	OBJ = $(OBJS) $(OBJS_BONUS)
+else
+	OBJ = $(OBJS)
+endif
+
 INCLUDE = libft.h
 NAME = libft.a
 
 all : $(NAME)
 
-$(NAME) : $(OBJS)
-	@$(AR) $@ $^
-	@echo "Makefile Complete"
+$(NAME) : $(OBJ)
+	$(AR) $@ $^
 
-.c.o : $(SRCS)
-	@$(CC) $(CFLAGS) -c -I $(INCLUDE) -o $@ $^
-
-bonus : $(OBJS_BONUS)
-	@$(AR) $(NAME) $^
-	@echo "Bonus Files make completed"
+bonus :
+	make WITH_BONUS=1 all
 
 clean :
-	@$(RM) $(OBJS) $(OBJS_BONUS)
-	@echo "Object files deleted"
+	$(RM) $(OBJS) $(OBJS_BONUS)
 
 fclean : clean
-	@$(RM) $(NAME)
-	@echo "All makefiles deleted"
+	$(RM) $(NAME)
 
 re : fclean all
 

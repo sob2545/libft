@@ -6,11 +6,12 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:47:16 by sesim             #+#    #+#             */
-/*   Updated: 2022/04/02 18:50:00 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/02 22:00:10 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);
