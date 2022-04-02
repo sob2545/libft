@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:47:16 by sesim             #+#    #+#             */
-/*   Updated: 2022/04/02 13:47:00 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/02 18:50:00 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ static size_t	word_cnt(char const *s, char c)
 
 static char	**word_free(char **tab)
 {
-	free(tab);
+	if (*tab || tab)
+		free(tab);
 	return (0);
 }
 
