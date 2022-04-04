@@ -6,7 +6,7 @@
 /*   By: sesim <sesim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 14:04:49 by sesim             #+#    #+#             */
-/*   Updated: 2022/04/01 14:04:50 by sesim            ###   ########.fr       */
+/*   Updated: 2022/04/04 18:21:55 by sesim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		ft_lstdelone(*lst, del);
 		*lst = cur;
 	}
+	*lst = 0;
 }
